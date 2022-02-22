@@ -12,8 +12,6 @@ public class Main {
 
         System.out.println("Area of circle is: " + c.area(radius));
         System.out.println("Circumference of circle is: " + c.circumference(radius));
-        c.getRadius();
-        c.setRadius(radius);
-        c.getRadius();
+        
     }
 }

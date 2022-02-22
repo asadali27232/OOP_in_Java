@@ -134,15 +134,10 @@ ul li a:hover{
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
-}
-.content .OOP{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
     color: #ff7200;
+
 }
+
 .content .cn{
     width: 160px;
     height: 40px;

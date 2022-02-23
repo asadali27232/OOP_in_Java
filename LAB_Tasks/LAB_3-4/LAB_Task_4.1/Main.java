@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Withdrawing 500 from myAccount...");
         myAccount.printBalance();
         myAccount.deposit(200);
-        System.out.println("Depositing 200  myAccount...");
+        System.out.println("Depositing 200 to myAccount...");
         myAccount.printBalance();
     
         System.out.println();

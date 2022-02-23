@@ -1,4 +1,4 @@
-//dev: SP21-BCS-007
+// dev: SP21-BCS-007
 public class QuadraticRoots {
     private int a;
     private int b;
@@ -6,6 +6,7 @@ public class QuadraticRoots {
     private double root1;
     private double root2;
     
+    // Constructors
     public QuadraticRoots(int a, int b, int c, double root1, double root2) {
         this.a = a;
         this.b = b;
@@ -22,6 +23,7 @@ public class QuadraticRoots {
         this.root2 = 0.0;
     }
     
+    // Getters Setters
     public int getA() {
         return a;
     }
@@ -61,20 +63,27 @@ public class QuadraticRoots {
     public void setRoot2(double root2) {
         this.root2 = root2;
     }
+    
+    // Display output of invalid roots
     private void rootsInvalid(){
         System.out.println("Roots for " + a + ", " + b + " and " +
-                c + " are not real (i.e imaginary roots");
+                c + " are not real (i.e imaginary roots)");
     }
+    
+    // Display output of valid roots
     private void rootsValid(double rootX, double rootY){
-        System.out.println();
+        System.out.println("Roots Are: (" + rootX + ", " + rootY + ")");
     }
+    
+    // Computing roots
     public void computeRoots(){
-        double sqrt = (b*b)-(4*a*c);
-        if (sqrt<0)
+        double insideSqrt = (b*b)-(4*a*c);
+        if (insideSqrt<0)
             rootsInvalid();
         else{
-            double rootX = -b+(sqrt);
+            double rootX = (-b+Math.sqrt(insideSqrt))/2*a;
+            double rootY = (-b-Math.sqrt(insideSqrt))/2*a;
+            rootsValid(rootX, rootY);
         }
-        
     }
 }

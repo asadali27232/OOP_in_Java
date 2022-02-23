@@ -78,6 +78,7 @@ public class QuadraticRoots {
     // Computing roots
     public void computeRoots(){
         double insideSqrt = (b*b)-(4*a*c);
+        
         if (insideSqrt<0)
             rootsInvalid();
         else{

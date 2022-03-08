@@ -10,6 +10,13 @@ public class Student {
         this.courses = courses;
         this.marks = marks;
     }
+    public Student(String std_name, String[] courses) {
+        this.std_name = std_name;
+        this.courses = courses;
+    }
+    public Student(double[] marks) {
+        this.marks = marks;
+    }
     
     public String getStd_name() {
         return std_name;
@@ -62,5 +69,17 @@ public class Student {
         }
         toStr += ")";
         return toStr;
+    }
+    
+    public static double[] courseAverage(Student[] studentArray){
+        double[] courseAverage = new double[3];
+        for (int i = 0; i < studentArray[0].getCourses().length; i++) {
+            double sum = 0;
+            for (int j=0 ; j < studentArray.length; j++)
+                sum += studentArray[j].marks[i];
+            
+            courseAverage[i] = sum/studentArray.length;
+        }
+        return courseAverage;
     }
 }

@@ -58,7 +58,7 @@ public class Polynomial {
     public String toString() {
         String string = "P(x) = ";
         for (int i = 0; i < this.coefficients.size() ; i++) {
-            String string1 = coefficients.get(i) + "x^" + i;
+            String string1 = coefficients.get(i) + "x^" + (this.coefficients.size()-(i+1));
             string = string.concat(string1);
             if (i < this.coefficients.size() - 1) {
                 String string2 = " + ";
@@ -78,35 +78,109 @@ public class Polynomial {
     
     public void addPolynomial(Polynomial polynomialToBeAdded){
             if(getDegree() == polynomialToBeAdded.getDegree()) {
-                for (int i = 0; i < getDegree(); i++) {
+                for (int i = 0; i < this.coefficients.size(); i++) {
                     this.coefficients.set(i, this.coefficients.get(i) + polynomialToBeAdded.coefficients.get(i));
                 }
             }
             else if (getDegree() > polynomialToBeAdded.getDegree()) {
-                
+                for (int i = 0; i < this.coefficients.size(); i++) {
+                    if (i < polynomialToBeAdded.getDegree())
+                        this.coefficients.set(i, this.coefficients.get(i) + polynomialToBeAdded.coefficients.get(i));
+                }
             }
             else if (getDegree() < polynomialToBeAdded.getDegree()) {
-                
+                for (int i = 0; i < polynomialToBeAdded.getDegree(); i++) {
+                    if (i < getDegree())
+                        this.coefficients.set(i, this.coefficients.get(i) + polynomialToBeAdded.coefficients.get(i));
+                    else {
+                        this.coefficients.add(polynomialToBeAdded.coefficients.get(i));
+                        this.setDegree(getDegree()+1);
+                    }
+                }
             }
     }
     
     public static Polynomial addPolynomial(Polynomial polyn1, Polynomial polyn2) {
-        Polynomial resultPolyn;
+        Polynomial resultPolyn = new Polynomial();
+
         if(polyn1.getDegree() == polyn2.getDegree()) {
             resultPolyn = new Polynomial(polyn1.getDegree());
-            for (int i = 0; i < polyn1.getDegree(); i++) {
+            for (int i = 0; i < polyn1.coefficients.size(); i++) {
                 resultPolyn.coefficients.set(i, polyn1.coefficients.get(i) + polyn2.coefficients.get(i));
             }
         }
         else if (polyn1.getDegree() > polyn2.getDegree()) {
             resultPolyn = new Polynomial(polyn1.getDegree());
+            for (int i = 0; i < polyn1.coefficients.size(); i++) {
+                if (i < polyn2.getDegree())
+                resultPolyn.coefficients.set(i, polyn1.coefficients.get(i) + polyn2.coefficients.get(i));
+                else
+                    resultPolyn.coefficients.set(i, polyn1.coefficients.get(i));
+            }
         }
         else if (polyn1.getDegree() < polyn2.getDegree()) {
             resultPolyn = new Polynomial(polyn2.getDegree());
+            for (int i = 0; i < polyn2.coefficients.size(); i++) {
+                if (i < polyn1.getDegree())
+                    resultPolyn.coefficients.set(i, polyn1.coefficients.get(i) + polyn2.coefficients.get(i));
+                else
+                    resultPolyn.coefficients.set(i, polyn2.coefficients.get(i));
+            }
         }
-        else
-            resultPolyn = new Polynomial();
-        
+        return resultPolyn;
+    }
+
+    public void multiplyPolynomial(Polynomial polynomialToBeAdded){
+        if(getDegree() == polynomialToBeAdded.getDegree()) {
+            for (int i = 0; i < this.coefficients.size(); i++) {
+                this.coefficients.set(i, this.coefficients.get(i) * polynomialToBeAdded.coefficients.get(i));
+            }
+        }
+        else if (getDegree() > polynomialToBeAdded.getDegree()) {
+            for (int i = 0; i < this.coefficients.size(); i++) {
+                if (i < polynomialToBeAdded.getDegree())
+                    this.coefficients.set(i, this.coefficients.get(i) * polynomialToBeAdded.coefficients.get(i));
+            }
+        }
+        else if (getDegree() < polynomialToBeAdded.getDegree()) {
+            for (int i = 0; i < polynomialToBeAdded.getDegree(); i++) {
+                if (i < getDegree())
+                    this.coefficients.set(i, this.coefficients.get(i) * polynomialToBeAdded.coefficients.get(i));
+                else {
+                    this.coefficients.add(polynomialToBeAdded.coefficients.get(i));
+                    this.setDegree(getDegree()+1);
+                }
+            }
+        }
+    }
+
+    public static Polynomial multiplyPolynomial(Polynomial polyn1, Polynomial polyn2) {
+        Polynomial resultPolyn = new Polynomial();
+
+        if(polyn1.getDegree() == polyn2.getDegree()) {
+            resultPolyn = new Polynomial(polyn1.getDegree());
+            for (int i = 0; i < polyn1.coefficients.size(); i++) {
+                resultPolyn.coefficients.set(i, polyn1.coefficients.get(i) * polyn2.coefficients.get(i));
+            }
+        }
+        else if (polyn1.getDegree() > polyn2.getDegree()) {
+            resultPolyn = new Polynomial(polyn1.getDegree());
+            for (int i = 0; i < polyn1.coefficients.size(); i++) {
+                if (i < polyn2.getDegree())
+                resultPolyn.coefficients.set(i, polyn1.coefficients.get(i) * polyn2.coefficients.get(i));
+                else
+                    resultPolyn.coefficients.set(i, polyn1.coefficients.get(i));
+            }
+        }
+        else if (polyn1.getDegree() < polyn2.getDegree()) {
+            resultPolyn = new Polynomial(polyn2.getDegree());
+            for (int i = 0; i < polyn2.coefficients.size(); i++) {
+                if (i < polyn1.getDegree())
+                    resultPolyn.coefficients.set(i, polyn1.coefficients.get(i) * polyn2.coefficients.get(i));
+                else
+                    resultPolyn.coefficients.set(i, polyn2.coefficients.get(i));
+            }
+        }
         return resultPolyn;
     }
 }

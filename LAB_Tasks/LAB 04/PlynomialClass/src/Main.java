@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        Polynomial polynomial1 = new Polynomial(3, 2, 3, 4);
+        Polynomial polynomial1 = new Polynomial(3, 2, 3, 4, 5);
         Polynomial polynomial2 = new Polynomial(3, 6, 1, 5);
         
         System.out.println(polynomial1);
@@ -24,12 +24,5 @@ public class Main {
         System.out.println();
         System.out.println("Product of Polynomial is: ");
         
-        System.out.print("Product of " + polynomial1 + "   +   " + polynomial2 + " is: ");
-        polynomial1.MultiplyPolynomial(polynomial2);
-        System.out.println(polynomial1);
-        
-        System.out.print("Product of " + polynomial1 + "   +   "  + polynomial2 + " is: ");
-        resultPolinomal = Polynomial.MultiplyPolynomial(polynomial1, polynomial2);
-        System.out.println(resultPolinomal);
     }
 }

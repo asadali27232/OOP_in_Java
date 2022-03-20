@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c475d44-940a-41d2-8d59-3d8b87f10f4c" name="Changes" comment="">
+    <list default="true" id="dcacc01d-173f-4f6e-a4a8-de8f0ddd6235" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PrimeNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Robot.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="26bgvqf5Dp9Mib9OBfgtDLwiimm" />
+  <component name="ProjectId" id="26dNWMom7DiZqMKRDKISOTg9FfA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -91,12 +94,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5c475d44-940a-41d2-8d59-3d8b87f10f4c" name="Changes" comment="" />
-      <created>1647697933964</created>
+      <changelist id="dcacc01d-173f-4f6e-a4a8-de8f0ddd6235" name="Changes" comment="" />
+      <created>1647749534261</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1647697933964</updated>
-      <workItem from="1647697936619" duration="1473000" />
+      <updated>1647749534261</updated>
+      <workItem from="1647749536135" duration="213000" />
     </task>
     <servers />
   </component>

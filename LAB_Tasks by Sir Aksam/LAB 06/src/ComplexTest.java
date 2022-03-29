@@ -13,7 +13,6 @@ public class ComplexTest {
         B[1] = new Complex(7, -8);
         B[2] = new Complex(5, 5);
 
-
         for (int i = 0; i < A.length; i++) {
             Complex resultant = Complex.addition(A[i],B[i]);
             System.out.println("resultant = " + resultant);

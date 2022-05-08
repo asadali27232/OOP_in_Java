@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcd2817-f05c-43d0-bbef-0e287daa8147" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sixPointFive/GradeBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sixPointFive/GradeBookTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sixPointFive/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LAB_Tasks by Sir Aksam/LAB 06/Lab Assign 2 (Physical).docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LAB_Tasks by Sir Aksam/LAB 06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LAB_Tasks by Sir Aksam/LAB 06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LAB_Tasks by Sir Aksam/LAB 06/src/ComplexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LAB_Tasks by Sir Aksam/LAB 06/src/ComplexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +72,8 @@
       <updated>1648574944041</updated>
       <workItem from="1648574946039" duration="1835000" />
       <workItem from="1648576858558" duration="60000" />
-      <workItem from="1648576979458" duration="5880000" />
+      <workItem from="1648576979458" duration="6008000" />
+      <workItem from="1649134498755" duration="18000" />
     </task>
     <servers />
   </component>

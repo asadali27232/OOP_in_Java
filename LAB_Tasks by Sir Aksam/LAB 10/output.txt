@@ -1,0 +1,1 @@
+BatchClass{batchName = 'SP21-BCS-C', startYear = 2018, endYear = 2022, numSubjects = 4, subjects = [OOP, DLD, LA, PHY] [ , marks = [85, 92, 67][76, 89, 22][94, 45, 78] ] }

@@ -1,0 +1,89 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+			"rows": 3
+		} ) {
+			name: "pMain"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "jtbToolBar"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jbFile"
+					"text": "File"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jbEdit"
+					"text": "Edit"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jbFind"
+					"text": "Find"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jbClient"
+					"text": "Client"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jbHelp"
+					"text": "Help"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "jpCenter"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0"
+					"$rowSpecs": "0, 0, 0, 0"
+					"$hGap": 5
+					"$vGap": 5
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "jpCennterLeft"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jbFindBtn"
+						"text": "Find"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jbEditBtn"
+						"text": "Edit"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jbExit"
+						"text": "Exit"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"alignment": 0
+			} ) {
+				name: "jpBelow"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jlFormat"
+					"text": "Format"
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "jrbEmail"
+					"text": "E-Mail"
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "jrbName"
+					"text": "Name"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 565, 300 )
+		} )
+	}
+}

@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+			name: "pMain"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlIcon"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/Task2/img_ClientDB.png" )
+				"toolTipText": "ClientDB"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlUsername"
+				"text": "Username"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "jtfUsername"
+				"columns": 15
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlPassword"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "jtfPassword"
+				"columns": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jbOK"
+				"text": "OK"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jbCancel"
+				"text": "Cancel"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 230, 185 )
+		} )
+	}
+}

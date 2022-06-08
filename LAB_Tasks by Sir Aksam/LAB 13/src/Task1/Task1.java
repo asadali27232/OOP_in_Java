@@ -1,7 +1,10 @@
+package Task1;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class Task1 extends JFrame {
+    private JPanel pMain;
     private JLabel jlIcon;
     private JLabel jlUsername;
     private JLabel jlPassword;
@@ -13,7 +16,8 @@ public class Task1 extends JFrame {
 
     public Task1() {
         super("Login");
-        setLayout(new FlowLayout());
+        pMain = new JPanel();
+        pMain.setLayout(new FlowLayout());
 
         Icon icon = new ImageIcon(getClass().getResource("img_ClientDB.png"));
         jlIcon = new JLabel();
@@ -33,17 +37,19 @@ public class Task1 extends JFrame {
         jbOK = new JButton("Ok");
         jbCancel = new JButton("Cancel");
 
-        add(jlIcon);
-        add(jlUsername);
-        add(jtfUsername);
-        add(jlPassword);
-        add(jtfPassword);
-        add(jbOK);
-        add(jbCancel);
+        pMain.add(jlIcon);
+        pMain.add(jlUsername);
+        pMain.add(jtfUsername);
+        pMain.add(jlPassword);
+        pMain.add(jtfPassword);
+        pMain.add(jbOK);
+        pMain.add(jbCancel);
     }
 
     public static void main(String[] args) {
         Task1 login = new Task1();
+        login.setTitle("Login");
+        login.setContentPane(login.pMain);
         login.setVisible(true);
         login.setSize(300, 220);
         login.setDefaultCloseOperation(EXIT_ON_CLOSE);

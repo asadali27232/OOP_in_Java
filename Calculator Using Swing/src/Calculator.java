@@ -19,6 +19,7 @@ public class Calculator extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+        // Generated using JFormDesigner Evaluation license - Asad Ali
         jpMain = new JPanel();
         jtfDisplay = new JTextField();
         jb7 = new JButton();
@@ -40,6 +41,12 @@ public class Calculator extends JFrame {
 
         //======== jpMain ========
         {
+            jpMain.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.
+            border.EmptyBorder(0,0,0,0), "JFor\u006dDesi\u0067ner \u0045valu\u0061tion",javax.swing.border.TitledBorder.CENTER
+            ,javax.swing.border.TitledBorder.BOTTOM,new java.awt.Font("Dia\u006cog",java.awt.Font
+            .BOLD,12),java.awt.Color.red),jpMain. getBorder()));jpMain. addPropertyChangeListener(
+            new java.beans.PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("bord\u0065r"
+            .equals(e.getPropertyName()))throw new RuntimeException();}});
             jpMain.setLayout(new GridBagLayout());
 
             //---- jtfDisplay ----
@@ -148,6 +155,7 @@ public class Calculator extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Asad Ali
     private JPanel jpMain;
     private JTextField jtfDisplay;
     private JButton jb7;

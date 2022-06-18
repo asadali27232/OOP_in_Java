@@ -38,7 +38,7 @@ public class Date {
     }
 
     public int getMonth() {
-        return getMonth();
+        return month;
     }
 
     public void setMonth(int month) {
@@ -49,7 +49,7 @@ public class Date {
     }
 
     public int getYear() {
-        return getYear();
+        return year;
     }
 
     public void setYear(int year) {

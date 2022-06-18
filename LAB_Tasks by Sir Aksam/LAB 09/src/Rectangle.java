@@ -62,7 +62,7 @@ public class Rectangle extends GeometricObject {
 
     @Override
     public String toString() {
-        return "Rectangle{" +
+        return super.toString() +"Rectangle{" +
                 "width=" + width +
                 ", height=" + height +
                 ", rectArea=" + rectArea +

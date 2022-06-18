@@ -45,15 +45,15 @@ public class Rectangle extends GeometricObject {
             return rectArea;
     }
 
-    public double setRectArea(double rectArea) throws InvalidAttributeValueException {
+    public double setRectArea(double rectPerimeter) {
+        return rectArea;
+    }
+
+    public double getRectPerimeter() throws InvalidAttributeValueException {
         if (rectPerimeter == 0) {
             throw new InvalidAttributeValueException();
         } else
             return rectPerimeter;
-    }
-
-    public double getRectPerimeter() {
-        return rectPerimeter;
     }
 
     public void setRectPerimeter(double rectPerimeter) {

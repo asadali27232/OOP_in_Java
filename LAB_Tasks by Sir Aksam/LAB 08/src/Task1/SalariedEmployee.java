@@ -1,3 +1,5 @@
+package Task1;
+
 public class SalariedEmployee extends Employee {
     private double weeklySalary;
 
@@ -31,7 +33,7 @@ public class SalariedEmployee extends Employee {
         return getWeeklySalary();
     }
 
-    // return String representation of SalariedEmployee object
+    // return String representation of Task1.SalariedEmployee object
     @Override
     public String toString() {
         return String.format("salaried employee: %s%n%s: $%,.2f",

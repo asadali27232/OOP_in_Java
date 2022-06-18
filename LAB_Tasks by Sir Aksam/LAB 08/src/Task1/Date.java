@@ -1,3 +1,5 @@
+package Task1;
+
 public class Date {
     private int date;
     private int month;
@@ -34,7 +36,7 @@ public class Date {
         if (date <= 31 && date > 0)
             this.date = date;
         else
-            throw new IllegalArgumentException("Date must be 1-31");
+            throw new IllegalArgumentException("Task1.Date must be 1-31");
     }
 
     public int getMonth() {

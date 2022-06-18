@@ -1,3 +1,5 @@
+package Task1;
+
 public class HourlyEmployee extends Employee {
     private double wage; // wage per hour
     private double hours; // hours worked for week
@@ -45,7 +47,7 @@ public class HourlyEmployee extends Employee {
         return hours;
     }
 
-    // calculate earnings; override abstract method earnings in Employee
+    // calculate earnings; override abstract method earnings in Task1.Employee
     @Override
     public double earnings() {
         if (getHours() <= 40) // no overtime
@@ -54,7 +56,7 @@ public class HourlyEmployee extends Employee {
             return 40 * getWage() + (getHours() - 40) * getWage() * 1.5;
     }
 
-    // return String representation of HourlyEmployee object
+    // return String representation of Task1.HourlyEmployee object
     @Override
     public String toString() {
         return String.format("hourly employee: %s%n%s: $%,.2f; %s: %,.2f",

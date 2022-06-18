@@ -1,3 +1,5 @@
+package Task1;
+
 import java.time.LocalDate;
 
 public class PayrollSystemTest {
@@ -34,10 +36,10 @@ public class PayrollSystemTest {
         for (Employee currentEmployee : employees) {
             System.out.println(currentEmployee); // invokes toString
 
-            // determine whether element is a BasePlusCommissionEmployee
+            // determine whether element is a Task1.BasePlusCommissionEmployee
             if (currentEmployee instanceof BasePlusCommissionEmployee) {
-                // downcast Employee reference to
-                // BasePlusCommissionEmployee reference
+                // downcast Task1.Employee reference to
+                // Task1.BasePlusCommissionEmployee reference
                 BasePlusCommissionEmployee employee = (BasePlusCommissionEmployee) currentEmployee;
 
                 employee.setBaseSalary(1.10 * employee.getBaseSalary());
@@ -50,7 +52,7 @@ public class PayrollSystemTest {
                 System.out.printf("earned $%,.2f%n%n", currentEmployee.earnings());
         }
         for (int j = 0; j < employees.length; j++)
-            System.out.printf("Employee %d is a %s%n", j, employees[j].getClass().getName());
+            System.out.printf("Task1.Employee %d is a %s%n", j, employees[j].getClass().getName());
 
     }
 }

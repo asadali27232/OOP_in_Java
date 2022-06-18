@@ -1,3 +1,5 @@
+package Task1;
+
 public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary; // base salary per week
 
@@ -28,7 +30,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         return getBaseSalary() + super.earnings();
     }
 
-    // return String representation of BasePlusCommissionEmployee object
+    // return String representation of Task1.BasePlusCommissionEmployee object
     @Override
     public String toString() {
         return String.format("%s %s; %s: $%,.2f",

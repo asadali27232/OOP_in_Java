@@ -1,3 +1,5 @@
+package Task1;
+
 public abstract class Employee {
     private final String firstName;
     private final String lastName;
@@ -30,10 +32,10 @@ public abstract class Employee {
         return dateOfBirth;
     }
 
-    // return String representation of Employee object
+    // return String representation of Task1.Employee object
     @Override
     public String toString() {
-        return String.format("%s %s Date of Birth: %s%nSocial security number: %s",
+        return String.format("%s %s Task1.Date of Birth: %s%nSocial security number: %s",
                 getFirstName(), getLastName(), getDateOfBirth().toString(), getSocialSecurityNumber());
     }
 

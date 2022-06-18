@@ -1,3 +1,5 @@
+package Task1;
+
 public class CommissionEmployee extends Employee {
 
     private double grossSales; // gross weekly sales
@@ -44,13 +46,13 @@ public class CommissionEmployee extends Employee {
         return commissionRate;
     }
 
-    // calculate earnings; override abstract method earnings in Employee
+    // calculate earnings; override abstract method earnings in Task1.Employee
     @Override
     public double earnings() {
         return getCommissionRate() * getGrossSales();
     }
 
-    // return String representation of CommissionEmployee object
+    // return String representation of Task1.CommissionEmployee object
     @Override
     public String toString() {
         return String.format("%s: %s%n%s: $%,.2f; %s: %.2f",

@@ -61,6 +61,16 @@ public class Rectangle extends GeometricObject {
     }
 
     @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                ", rectArea=" + rectArea +
+                ", rectPerimeter=" + rectPerimeter +
+                '}';
+    }
+
+    @Override
     public double getArea() {
         return getHeight() * getWidth();
     }

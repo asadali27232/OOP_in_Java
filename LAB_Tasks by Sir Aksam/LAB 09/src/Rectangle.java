@@ -45,8 +45,8 @@ public class Rectangle extends GeometricObject {
             return rectArea;
     }
 
-    public double setRectArea(double rectPerimeter) {
-        return rectArea;
+    public void setRectArea(double rectArea) {
+        this.rectArea = rectArea;
     }
 
     public double getRectPerimeter() throws InvalidAttributeValueException {
@@ -82,7 +82,8 @@ public class Rectangle extends GeometricObject {
 
     @Override
     public void computeStats() {
-
+        setRectArea(getArea());
+        setRectPerimeter(getPerimeter());
     }
 
     @Override

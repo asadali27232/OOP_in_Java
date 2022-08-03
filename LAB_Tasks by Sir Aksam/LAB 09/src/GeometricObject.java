@@ -37,5 +37,6 @@ public abstract class GeometricObject implements StatsComputable{
     }
 
     public abstract double getArea();
+
     public abstract double getPerimeter();
 }
